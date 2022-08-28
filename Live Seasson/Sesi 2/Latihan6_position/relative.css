@@ -1,0 +1,26 @@
+body {
+    margin: 30px;
+}
+
+.satu {
+    width: 200px;
+    height: 200px;
+    background-color: salmon;
+}
+
+.dua {
+    width: 200px;
+    height: 200px;
+    background-color: skyblue;
+
+    /* kotak dua akan naik 1 dimensi, namun yang lain tetap. Sehingga elemen dua dapat bergeser kemana pun relatif dengan posisi semulanya. artinya, ketika top dan left nya 0, posisi kotak tidak akan berubah */
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+.tiga {
+    width: 200px;
+    height: 200px;
+    background-color: limegreen;
+}

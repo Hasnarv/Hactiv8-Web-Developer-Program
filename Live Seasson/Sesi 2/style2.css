@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+}
+.box{
+    background-color: violet;
+    height: 200px;
+    width: 300px;
+    padding: 20px;
+}
+.box-dua{
+    background: red;
+    height: 100px;
+    width: 600px;
+    margin-left: 70px;
+}

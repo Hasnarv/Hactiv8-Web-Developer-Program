@@ -1,0 +1,39 @@
+body {
+    margin: 30px;
+}
+
+.container {
+    width: 600px;
+    border: 5px solid goldenrod;
+    margin: auto;
+
+    /* membuat posisi container naik 1 dimensi agar memiliki dimensi yg sama dengan kotak 2 */
+    position: relative;
+}
+
+.container div {
+    margin: auto;
+}
+
+.satu {
+    width: 200px;
+    height: 200px;
+    background-color: salmon;
+}
+
+.dua {
+    width: 200px;
+    height: 200px;
+    background-color: skyblue;
+
+    /* kotak dua akan naik 1 dimensi, ruang yg sebelumnya ditempati kotak tersebut, dianggap tidak ada dan akan diisi oleh kotak bawahnya. kotak dua dapat bergeser kemana pun relatif dengan window/body. artinya, ketika top dan leftnya 0 posisi kotak akan berada di pojok kiri atas tanpa memperdulikan container yg sudah memiliki dimensi yg sama. ketika scroll halamannya, kotak tersebut akan terkunci di posisi itu dan tidak akan ikut bergeser.*/
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.tiga {
+    width: 200px;
+    height: 200px;
+    background-color: limegreen;
+}
