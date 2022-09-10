@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>greet</title>
+</head>
+
+<body>
+    <input type="text" id="yourName" />
+    <button type="button" onclick="sayGreeting()">Click Me</button>
+    <script>
+        function sayGreeting() {
+            yourName = document.getElementById("yourName").value;
+            if (yourName == "" || !yourName)
+                console.log("Silakan isi Nama anda terlebih dahulu")
+            else
+                console.log("Selamat Datang " + yourName)
+        }
+    </script>
+</body>
+
+</html>
