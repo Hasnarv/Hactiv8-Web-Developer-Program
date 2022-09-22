@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assignment2.css">
+    <title>Assignment 2</title>
+</head>
+
+<body">
+    <nav>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">PRODUCT</a></li>
+        <li><a href="#">GALLERY</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">INVENTORY</a></li>
+    </nav>
+
+    <header>
+        <div class="identitas">
+            <table cellpadding="10">
+                <tr>
+                    <td rowspan="3"><img src="img/foto.jpeg" alt="foto profil"></td>
+                    <td colspan="2">
+                        <h2 id="nama">Hasna Rizki Violina</h2>
+                        <p id="role">Frontend Web Developer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button class="kontak">Kontak</button></td>
+                    <td><button class="resume">Resume</button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="informasi">
+            <table cellpadding="7">
+                <tr>
+                    <td>Availability</td>
+                    <td id="availability">Part Time</td>
+                </tr>
+                <tr>
+                    <td>Usia</td>
+                    <td id="usia">21 tahun</td>
+                </tr>
+                <tr>
+                    <td>Lokasi</td>
+                    <td id="lokasi">Purwokerto, Jawa Tengah</td>
+                </tr>
+                <tr>
+                    <td>Pengalaman</td>
+                    <td id="pengalaman">2</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td id="email">hasna.violina@gmail.com</td>
+                </tr>
+            </table>
+        </div>
+    </header>
+
+    <form onsubmit="return false">
+        <label for="nama">Nama</label><br>
+        <input onchange="onChangeName(event)" type="text" name="nama" id="inputNama">
+        <br><br>
+        <label for="role">Role</label><br>
+        <input onchange="onChangeRole(event)" type="text" name="role" id="inputRole">
+        <br><br>
+        <label for="Availability">Availability</label><br>
+        <input onchange="onChangeAvailability(event)" type="text" name="Availability" id="inputAvailability">
+        <br><br>
+        <label for="Usia">Usia</label><br>
+        <input onchange="onChangeUsia(event)" type="text" name="Usia" id="inputUsia">
+        <br><br>
+        <label for="Lokasi">Lokasi</label><br>
+        <input onchange="onChangeLokasi(event)" type="text" name="Lokasi" id="inputLokasi">
+        <br><br>
+        <label for="Year Experience">Year Experience</label><br>
+        <input onchange="onChangeExperience(event)" type="text" name="Year Experience" id="inputExperience">
+        <br><br>
+        <label for="Email">Email</label><br>
+        <input onchange="onChangeEmail(event)" type="text" name="Email" id="inputEmail">
+        <br><br>
+        <button onclick="onButtonClick()" id="btnOK">Submit</button>
+    </form>
+
+    <script src="Assignment.js"></script>
+</body>
+
+</html>
